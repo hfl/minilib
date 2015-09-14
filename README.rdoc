@@ -1,0 +1,3 @@
+== README
+
+This is a mini library resource manage system based on DC metadata.

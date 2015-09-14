@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <strong>Resource ID:</strong>
+  <%= @resource.rid %>
+</h3>
+
+<dl>
+  <dt>Title <%=link_to "+", new_resource_title_path(@resource.id) %></dt>
+  <dd><% @resource.titles.each do |title| -%>
+    <%= title.title %><br>
+  <% end -%></dd>
+</dl>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
